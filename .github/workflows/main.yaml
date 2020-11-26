@@ -1,0 +1,13 @@
+ 
+name: 'Build and Deploy'
+on:
+  push:
+    branches:
+      - master
+jobs:
+  buildAndDeploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - {name: Print Structure, run: 'ls'}
+      - {name: Print Structure, run: 'pwd'}
